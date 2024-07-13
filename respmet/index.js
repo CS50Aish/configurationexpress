@@ -9,7 +9,10 @@ app.use(express.text());
 
 app.post("/", function(req, res) {
 
+    // Incase of json
     console.log("name", req.body.name);
+    // Incase of text
+    console.log(req.body);
     res.end();
 
 });
