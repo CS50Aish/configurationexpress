@@ -298,6 +298,10 @@ About to write to /home/labuser/Desktop/configurationexpress/expmidproj/package.
   "license": "ISC"
 }
 
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js 
+Listening to port 3001
+Hello there
+Router Level Middleware
 
 Is this OK? (yes) 
 labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ touch index.js
@@ -306,3 +310,20 @@ labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js
 Listening to port 3000
 Hello there
 Hello there
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js 
+Listening to port 3000
+Hello there
+Hello error handling middleware
+ReferenceError: err is not defined
+    at /home/labuser/Desktop/configurationexpress/expmidproj/index.js:29:10
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+    at /home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+Router Level Middleware
