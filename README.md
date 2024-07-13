@@ -449,3 +449,65 @@ Request Headers => [object Object]
 Before => false
 After => true
 favicon.ico
+
+labuser@ubuntu2204:~/Desktop/configurationexpress$ mkdir respmet
+labuser@ubuntu2204:~/Desktop/configurationexpress$ cd respmet/
+labuser@ubuntu2204:~/Desktop/configurationexpress/respmet$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (respmet) 
+version: (1.0.0) 
+description: Project on Response Handling 
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Aishwarya Waghmare
+license: (ISC) 
+About to write to /home/labuser/Desktop/configurationexpress/respmet/package.json:
+
+{
+  "name": "respmet",
+  "version": "1.0.0",
+  "description": "Project on Response Handling ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya Waghmare",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+npm notice 
+npm notice New minor version of npm available! 10.2.4 -> 10.8.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.2
+npm notice Run npm install -g npm@10.8.2 to update!
+npm notice 
+labuser@ubuntu2204:~/Desktop/configurationexpress/respmet$ npm init -y
+Wrote to /home/labuser/Desktop/configurationexpress/respmet/package.json:
+
+{
+  "name": "respmet",
+  "version": "1.0.0",
+  "description": "Project on Response Handling ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya Waghmare",
+  "license": "ISC",
+  "keywords": []
+}
+
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/respmet$ touch index.js
