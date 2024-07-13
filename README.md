@@ -511,3 +511,94 @@ Wrote to /home/labuser/Desktop/configurationexpress/respmet/package.json:
 
 
 labuser@ubuntu2204:~/Desktop/configurationexpress/respmet$ touch index.js
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/respmet$ cd ..
+labuser@ubuntu2204:~/Desktop/configurationexpress$ mkdir expcrud
+labuser@ubuntu2204:~/Desktop/configurationexpress$ cd expcrud/
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (expcrud) 
+version: (1.0.0) 
+description: Project on CRUD Operations
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Aishwarya Waghmare
+license: (ISC) 
+About to write to /home/labuser/Desktop/configurationexpress/expcrud/package.json:
+
+{
+  "name": "expcrud",
+  "version": "1.0.0",
+  "description": "Project on CRUD Operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya Waghmare",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm init -y
+Wrote to /home/labuser/Desktop/configurationexpress/expcrud/package.json:
+
+{
+  "name": "expcrud",
+  "version": "1.0.0",
+  "description": "Project on CRUD Operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aishwarya Waghmare",
+  "license": "ISC",
+  "keywords": []
+}
+
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ touch index.js
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm install express
+
+added 64 packages, and audited 65 packages in 5s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm install mongodb
+
+added 12 packages, and audited 77 packages in 7s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm install mongoose
+
+added 9 packages, and audited 86 packages in 2s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm install nodemon --save-dev
+
+added 29 packages, and audited 115 packages in 4s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
