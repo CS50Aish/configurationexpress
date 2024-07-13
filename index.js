@@ -19,3 +19,4 @@ app.enable('Configuration command - disabled function');
 console.log(app.disabled('Configuration command - disabled function'));
 app.enable('Configuration command - enabled function');
 console.log(app.enabled('Configuration command - enabled function'));
+
