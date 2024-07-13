@@ -301,3 +301,8 @@ About to write to /home/labuser/Desktop/configurationexpress/expmidproj/package.
 
 Is this OK? (yes) 
 labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ touch index.js
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js 
+Listening to port 3000
+Hello there
+Hello there
