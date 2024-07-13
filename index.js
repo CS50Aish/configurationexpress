@@ -13,3 +13,7 @@ app.disable('Configuration command - disable function');
 console.log("Disable function => " + app.get('Configuration command - disable function'));
 
 // Use app.enabled and app.disabled
+console.log(app.disabled('Configuration command - disabled function'));
+console.log(app.enabled('Configuration command - enabled function'));
+app.enable('Configuration command - disabled function');
+console.log(app.disabled('Configuration command - disabled function'));
