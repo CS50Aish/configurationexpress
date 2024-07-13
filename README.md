@@ -422,3 +422,30 @@ http://localhost:3000/request-query?title=Query%20Request%20is%20Success
 labuser@ubuntu2204:~/Desktop/configurationexpress/reqhandproj$ node index.js 
 Listening on port 3000
 { title: 'Query Request is Success' }
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/reqhandproj$ node index.js 
+Listening on port 3000
+Request Headers => [object Object]
+Request Headers => [object Object]
+Request Headers => [object Object]
+Before => false
+After => true
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/reqhandproj$ node index.js 
+Listening on port 3000
+Request Headers => [object Object]
+Request Headers => [object Object]
+Request Headers => [object Object]
+Before => false
+After => true
+Request Headers => [object Object]
+Request Headers => [object Object]
+Request Headers => [object Object]
+Before => false
+After => true
+Request Headers => [object Object]
+Request Headers => [object Object]
+Request Headers => [object Object]
+Before => false
+After => true
+favicon.ico

@@ -20,10 +20,15 @@ app.get('/:id', function(req, res){
 // Request Headers and Request Get Parameters
 app.get("/", function(req, res){
     // Before res.send()
-    console.log("Before => " + res.headerSent);
+    console.log("Request Headers => " + req.headers);
+    console.log("Request URL => " + req.url);
+    console.log("Request IP => " + req.ip);
+    console.log("Request Protocol => " + req.headers);
+    // Before res.send()
+    console.log("Before => " + res.headersSent);
     res.send('Ok');
     // After res.send()
-    console.log("After => " + res.headerSent);
+    console.log("After => " + res.headersSent);
 });
 
 // Listening 
