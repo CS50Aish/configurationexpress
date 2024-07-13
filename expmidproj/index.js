@@ -1,8 +1,8 @@
-// Lets demonstrate application level middleware
 const express = require('express');
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
+// Application-level middleware
 app.get("/", (req, res, next) => {
     console.log("Hello there");
     next();
@@ -13,7 +13,7 @@ app.get("/", (req, res, next) => {
     </div>`);
 });
 
-// Lets demonstrate router level middleware
+// Router-level middleware
 const router = express.Router();
 
 router.use((req, res, next) => {
@@ -23,9 +23,10 @@ router.use((req, res, next) => {
 
 app.use('/routerlevelmiddleware', router);
 
-// Lets demonstrate error handling middleware
+// Error handling middleware
 app.get('/errorhandlingmiddleware', (req, res, next) => {
     console.log("Hello error handling middleware");
+    const err = new Error("This is an error");
     next(err);
 }, (req, res) => {
     res.send(`<div><h2>Expressjs - Error Handling Middleware</h2></div>`);
@@ -36,6 +37,15 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something Broke');
 });
 
+
+// Lets demonstrate third party middleware
+
+const cookieParser = require('cookie-parser');
+
+// Load cookies parsing middleware
+console.log('Loading the third party middleware function')
+app.use(cookieParser());
+
 app.listen(port, () => {
-    console.log(`Listening to port ${port}`);
+    console.log(`Listening on port ${port}`);
 });

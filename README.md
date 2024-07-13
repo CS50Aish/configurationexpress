@@ -327,3 +327,32 @@ ReferenceError: err is not defined
     at expressInit (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/middleware/init.js:40:5)
     at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
 Router Level Middleware
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js 
+Listening to port 3000
+Hello error handling middleware
+Error: This is an error
+    at /home/labuser/Desktop/configurationexpress/expmidproj/index.js:29:17
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+    at /home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/labuser/Desktop/configurationexpress/node_modules/express/lib/router/layer.js:95:5)
+Router Level Middleware
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ npm install --save cookie-parser
+
+added 3 packages, and audited 4 packages in 2s
+
+found 0 vulnerabilities
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expmidproj$ node index.js 
+Loading the third party middleware function
+Listening on port 3000
+Router Level Middleware
+Hello error handling middleware
+Error: This is an error
