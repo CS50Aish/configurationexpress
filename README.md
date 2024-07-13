@@ -602,3 +602,24 @@ added 29 packages, and audited 115 packages in 4s
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ node index.js 
+(node:11259) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+Server Started
+Connected...
+
+labuser@ubuntu2204:~/Desktop/configurationexpress/expcrud$ npm start
+
+> expcrud@1.0.0 start
+> nodemon index.js
+
+[nodemon] 3.1.4
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node index.js`
+(node:11464) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+Server Started
+Connected...
